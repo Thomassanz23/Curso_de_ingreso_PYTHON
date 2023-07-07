@@ -77,8 +77,11 @@ class App(customtkinter.CTk):
         
 
     def btn_dividir_on_click(self):
-        valor_A = int(self.txt_operador_a.get())
-        valor_B = int(self.txt_operador_b.get())
+        valor_A = self.txt_operador_a.get()
+        valor_B = self.txt_operador_b.get()
+
+        valor_A = int(valor_A)
+        valor_B = int(valor_B)
 
         resultado = valor_A // valor_B
 

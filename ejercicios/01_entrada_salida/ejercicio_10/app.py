@@ -40,8 +40,11 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        importe = float(self.txt_importe.get())
-        descuento = float(self.txt_descuento.get())
+        importe = self.txt_importe.get()
+        descuento = self.txt_descuento.get()
+        
+        importe = float(importe)
+        descuento = float(descuento)
 
         importe_actualizado = importe - (importe * descuento / 100)
 

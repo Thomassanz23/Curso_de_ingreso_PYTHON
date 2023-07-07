@@ -41,12 +41,15 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        operacionA= int(self.txt_operador_a.get())
-        operacionB= int(self.txt_operador_b.get())
+        operacionA= self.txt_operador_a.get()
+        operacionB= self.txt_operador_b.get()    
 
-        resto = operacionA % operacionB
+        operacionA= int(operacionA)
+        operacionB= int(operacionB)
 
-        alert(title="Celculo de Resto", message="El resto de dividir {} por {} es: {}".format(operacionA, operacionB, resto))
+        resultado = operacionA % operacionB
+
+        alert(title="Celculo de Resto", message="El resto de dividir {} por {} es: {}".format(operacionA, operacionB, resultado))
         
         
         
