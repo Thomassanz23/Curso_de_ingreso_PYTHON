@@ -29,13 +29,7 @@ class App(customtkinter.CTk):
         self.btn_mostrar.grid(row=2, pady=20, columnspan=2, sticky="nsew")
 
     def btn_mostrar_on_click(self):
-<<<<<<< HEAD:ejercicios/01_entrada_salida/ejercicio_01/app.py
         alert(title="EJ 01" , message="Esto no anda, fuciona")    
-        
-=======
-        pass
-
->>>>>>> 1f442cc264dd3330454d5b18f58c36600d1c9652:ejercicios/01_entrada_salida/ejercicio_01/app_ES_01.py
 
 if __name__ == "__main__":
     app = App()
