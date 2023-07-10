@@ -42,7 +42,6 @@ class App(customtkinter.CTk):
         self.btn_mostrar.grid(row=2, pady=20, columnspan=2, sticky="nsew")
 
     def btn_mostrar_on_click(self):
-<<<<<<< HEAD:ejercicios/01_entrada_salida/ejercicio_10/app.py
         importe = self.txt_importe.get()
         descuento = self.txt_descuento.get()
         
@@ -53,12 +52,6 @@ class App(customtkinter.CTk):
 
         alert (title="Calcular de Importe", message="El importe actualizado es:{}".format(importe_actualizado))
         
-    
-=======
-        pass
-
-
->>>>>>> 1f442cc264dd3330454d5b18f58c36600d1c9652:ejercicios/01_entrada_salida/ejercicio_10/app_ES_10.py
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
