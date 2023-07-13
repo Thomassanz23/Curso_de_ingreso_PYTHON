@@ -18,8 +18,8 @@ a la hora de realizar un alambrado permetral, se le solicita al usuario que ingr
 
     EJ 36 MTS X 24 MTS 
     (G)Poste Quebracho Grueso de 2.4 mts
-    (V)Poste Quebracho Fino de 2.2 mts
-    (F)Varillas
+    (F)Poste Quebracho Fino de 2.2 mts
+    (V)Varillas
     
     G V V V V V F V V V V V F V V V V V G
     V                                   V
@@ -69,28 +69,30 @@ class App(customtkinter.CTk):
         largo = float(largo)
         ancho = float(ancho)
 
-        metros_cuadrados = largo * ancho
-        metros_lineales_perimetros = 2 * largo + 2 * ancho
+        metros_cuadrados = ancho * largo
+        metros_lineales = 2 * largo + 2 * ancho
+
+
 
         #A
-        resultado =f"Metros cuadrados del terreno : {metros_cuadrados}"
-        resultado =f"Metros lineales del perimetro: {metros_lineales_perimetros}"
+        resultado =f"Metros cuadrados del terreno : {metros_cuadrados}\n"
+        resultado +=f"Metros lineales del perimetro: {metros_lineales}\n"
 
         #B
-        cantidad_postes_grueso = metros_lineales_perimetros // 250 + 4
-        resultado = f"Cantidad de postes de quebracho Gueso de 2.4 mts : {cantidad_postes_grueso}"
+        cantidad_postes_grueso = metros_lineales // 250 + 4
+        resultado += f"Cantidad de postes de quebracho Gueso de 2.4 mts : {cantidad_postes_grueso}\n"
 
         #C
-        cantidad_postes_fino=metros_lineales_perimetros // 12 - cantidad_postes_grueso
-        resultado = f"Cantidad de postes de quebracho Fino de 2.2 mts: {cantidad_postes_fino}"
+        cantidad_postes_fino=metros_lineales // 12 - cantidad_postes_grueso
+        resultado += f"Cantidad de postes de quebracho Fino de 2.2 mts: {cantidad_postes_fino}\n"
 
         #D
-        cantidad_varillas = metros_lineales_perimetros // 2
-        resultado = f"Cantidad de varillas : {cantidad_varillas}"
+        cantidad_varillas = metros_lineales // 2
+        resultado += f"Cantidad de varillas : {cantidad_varillas}\n"
 
         #E
-        cantidad_alambre = metros_lineales_perimetros * 7
-        resultado = f"Cantidad de alambre alta resistencia 17/15 : {cantidad_alambre}"
+        cantidad_alambre = metros_lineales * 7
+        resultado += f"Cantidad de alambre alta resistencia 17/15 : {cantidad_alambre}\n"
 
         alert(title="Resultado", message=resultado)
 

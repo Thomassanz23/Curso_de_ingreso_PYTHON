@@ -5,8 +5,8 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
-nombre:
-apellido:
+nombre: Thomas
+apellido: Sanchez
 ---
 Ejercicio: instrucion_if_01
 ---
@@ -34,6 +34,54 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
+        
+        edad = self.txt_edad.get ()
+    
+        edad = int(edad)
+
+        if edad == 18:
+            title = "Correto"
+            respuesta = "Usted tiene 18 años"
+            alert(title ,f"{respuesta}")
+        else:
+            title = "Error"
+            respuesta = "No tenes 18 años"
+            alert (title , f"{respuesta}")
+
+        #dividendo = 12
+        #divisor = self.txt_edad.get()
+
+        #divisor = int(divisor)
+        
+        """
+        OPeradores relacionales
+        >mayor
+        <menor
+        >=mayoe o igual
+        <=menor o igual
+        ==igual
+        !=distinto
+        """
+        #if divisor != 0:
+        #    resultado = dividendo / divisor
+        #    
+        #    alert("resultado", f"{resultado}")
+        #    if divisor == 1:
+        #        alert("Burro!!", "No sabes la talba del 1")
+        #else:
+        #    #alert("Error", "No se puede dividir por cero")
+        #    resultado = "No se puede dividir por 0"
+        #    title = "Error"
+
+        #if divisor == 0 :
+        #    resultado = "No se puede por 0"
+        #    title= "Error" 
+
+        
+        #alert(title, f"{resultado}")
+
+
+
         pass
 
         
