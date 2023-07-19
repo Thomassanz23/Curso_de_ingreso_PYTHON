@@ -32,7 +32,29 @@ class App(customtkinter.CTk):
 
 
     def btn_comenzar_ingreso_on_click(self):
-        pass
+        numero_ingreso = 0
+        contador = 0
+
+        acumulador = 0
+        while numero_ingreso !=None:
+            numero_ingreso = prompt("EJ 7", "Ingreso un numero")
+
+            if numero_ingreso == None:
+                continue
+
+            numero_ingreso = int(numero_ingreso)
+            acumulador += numero_ingreso
+            contador += 1
+
+        promedio = acumulador/ contador 
+
+        self.txt_suma_acumulada.delete(0,100)
+        self.txt_promedio.delete(0,100)
+
+        self.txt_suma_acumulada.insert(0,acumulador)
+        self.txt_promedio.insert(0,promedio)
+
+        
 
     
 if __name__ == "__main__":

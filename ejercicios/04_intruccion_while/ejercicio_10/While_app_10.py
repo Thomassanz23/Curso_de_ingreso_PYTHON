@@ -33,6 +33,50 @@ class App(customtkinter.CTk):
 
 
     def btn_comenzar_ingreso_on_click(self):
+        acumualdor_negativos = 0 
+        acumualdor_positivos = 0
+        contador_negativos = 0 
+        contador_positivos = 0
+        contador_ceros = 0
+        direfencia = 0
+
+
+        numero_ingresado =''
+
+        while numero_ingresado !=None:
+            numero_ingresado = prompt("Ej 10","Ingrese un numero")
+
+            if numero_ingresado != None:
+                numero_ingresado = int(numero_ingresado)
+
+                if numero_ingresado < 0:
+                    acumualdor_negativos += numero_ingresado
+                    contador_negativos += 1
+                elif numero_ingresado > 0:
+                    acumualdor_positivos += numero_ingresado
+                    contador_positivos += 1
+                
+                else:
+                    contador_ceros += 1
+
+        direfencia =contador_positivos - contador_negativos
+
+        mensaje = f"La suma de los negativos es:{acumualdor_negativos} \n"
+        mensaje += f"La suma de los positivos{acumualdor_positivos}\n"
+        mensaje += f"cantidad a negativos {contador_negativos}\n"
+        mensaje += f"cantidad a positivos{contador_positivos}\n"
+        mensaje += f"cantidad de ceroz{contador_ceros}\n"
+        mensaje += f"Diferecian entre la cantidad de los numero de pisiticos ingresador y los negativos es :{direfencia}\n"
+
+        alert ("respuestas", message=mensaje)
+
+                
+
+
+                
+                
+                
+            
         pass
 
     

@@ -32,6 +32,32 @@ class App(customtkinter.CTk):
 
 
     def btn_comenzar_ingreso_on_click(self):
+        suma_acumulada = 0
+        producto = 1
+        contador = 0
+
+        while True:
+            numero_ingreso = prompt("EJ 08", "Ingrese un numeor, Cancelar o 0 para salir")
+
+            if numero_ingreso == None or numero_ingreso == "0":
+                break
+
+            numero_ingreso = int(numero_ingreso)
+
+            if numero_ingreso > 0:
+                suma_acumulada = suma_acumulada + numero_ingreso
+
+            elif numero_ingreso < 0:
+                    producto = producto * numero_ingreso 
+
+        self.txt_suma_acumulada.delete(0, 100)
+        self.txt_producto.delete(0, 100)
+
+        self.txt_suma_acumulada.insert(0, suma_acumulada)
+        self.txt_producto.insert(0, producto)
+
+
+
         pass
 
     

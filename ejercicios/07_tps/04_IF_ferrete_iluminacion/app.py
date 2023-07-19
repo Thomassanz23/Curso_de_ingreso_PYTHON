@@ -74,7 +74,7 @@ class App(customtkinter.CTk):
         alert ("titulos",f"El precio final es :{precio_final}")
 
 
-        """
+"""
         if cantidad >= 6:
             descuento = 0.5
         else:
