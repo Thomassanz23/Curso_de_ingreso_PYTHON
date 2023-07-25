@@ -23,7 +23,10 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass    
+        num= 6 
+        for numero in range(1,num):
+            alert ( "EJ2", f"{num -numero}")
+            
        
             
 

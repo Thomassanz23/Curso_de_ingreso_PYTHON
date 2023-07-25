@@ -21,7 +21,22 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+       
+
+        for _ in range(100):
+            valor = prompt ("EJ4", "Ingrese un numero valido:")
+            
+            valor = int(valor)
+            
+
+            if valor == 9:
+                break
+        
+        alert("Finalizado", "Ha ingresado el valor 9. Procese finalizado")
+        
+
+    
+
         
     
 if __name__ == "__main__":

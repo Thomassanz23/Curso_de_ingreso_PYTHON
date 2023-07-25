@@ -38,7 +38,7 @@ class App(customtkinter.CTk):
         edad = self.txt_edad.get()
         edad = int(edad)
 
-        if edad:
+        if edad :
             años = 10
             mensaje = "ES ADOLESENTE"
         else:

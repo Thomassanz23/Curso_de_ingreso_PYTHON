@@ -50,7 +50,16 @@ class App(customtkinter.CTk):
         self.btn_validar.grid(row=4, pady=20, columnspan=2, sticky="nsew")
 
     def btn_validar_on_click(self):
-        pass
+        apellido = prompt ("Importante" , "Ingrese su apellido:")
+
+        while (apellido == None or apellido == "") or not apellido.isalpha:
+            apellido = prompt ("" ,"Reingrese el apellido: " )
+
+            edad = prompt ("" ,"Ingrese su edad:" )
+            while edad == None or edad.isdigit() == False or int(edad) < 18 or int(edad) > 90:
+                edad = prompt ("" ,"Reingrese su edad:" )
+                print(edad)
+
 
 
 if __name__ == "__main__":

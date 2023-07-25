@@ -24,6 +24,17 @@ class App(customtkinter.CTk):
         
     
     def btn_pedir_clave_on_click(self):
+  
+        while True:
+            usuario = prompt("Usuario", "Ingrese el nombre del usuario")
+            clave = prompt("Clave", "Ingrese la clave del usuario")
+
+            if clave == "utn750":
+               alert("EJ3","Contrasela correta")
+               break
+            else:
+               alert("EJ3","Contrasela incorreta")
+
         pass
     
     

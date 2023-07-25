@@ -25,16 +25,17 @@ class App(customtkinter.CTk):
     
     def btn_mostrar_iteracion_on_click(self):
 
-        numero = 1
-        numero = 10
-
+        numero = 0
         while numero < 10:
             numero += 1
-            
+            print(numero)
+        alert("Ej1", f"{numero}")
 
-        print(f"{numero}", "ASCENDENTE desde el 1 al 10") 
+   
 
-        pass
+        #print(f"{numero}", "ASCENDENTE desde el 1 al 10") 
+
+ 
     
     
 if __name__ == "__main__":

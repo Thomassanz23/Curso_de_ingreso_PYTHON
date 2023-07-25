@@ -29,7 +29,48 @@ class App(customtkinter.CTk):
         self.btn_validar.grid(row=4, pady=20, columnspan=2, sticky="nsew")
 
     def btn_validar_on_click(self):
-        pass
+        nombre_max = ""
+        nombre_min = ""
+        cantidad_max = 0
+        cantidad_min = 0
+        edad_min = 0
+        edad_max= 0
+    
+
+        while True:
+            nombre = prompt("", "Ingrese su nombre")
+            while nombre == None or not nombre.isalpha():
+                nombre = prompt("","Ingrese su nombre")
+                
+            edad = prompt("", "Ingrese su edad")
+            while edad == None or not edad.isdigit() or  int(edad) < 25:
+                edad = prompt("","Ingrese su edad")
+            edad = int(edad)
+            cantidad = prompt("","Ingrese la cantida")
+            while cantidad == None or not cantidad.isdigit() or int(cantidad) <=0:
+                cantidad = prompt("","Ingrese la cantidad")
+
+            cantidad= int(cantidad)
+            continar = question("Titulo", "Desea continuar?")
+
+            if cantidad_max == False:
+                cantidad_max = True
+                cantidad_max = nombre
+
+            cantidad =int(cantidad)
+            if cantidad_max > cantidad
+            
+
+
+
+                
+
+
+            if not continar:
+                break
+
+
+
 
 
 if __name__ == "__main__":

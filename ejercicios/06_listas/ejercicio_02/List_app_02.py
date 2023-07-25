@@ -27,9 +27,20 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
+        for numero in self.lista_datos:
+            alert("inf" , numero)
         pass
         
     def btn_cargar_on_click(self):
+        print(len(self.lista_datos))
+
+        for numero in range (3):
+            self.lista_datos.clear()
+            datos = prompt("EJ2", "Ingrese elementos")
+
+            while datos == None or not datos.isdigit():
+                datos = prompt("EJ8","Error! Ingrese un numero valido")
+            self.lista_datos.append(datos)
         pass
     
 if __name__ == "__main__":

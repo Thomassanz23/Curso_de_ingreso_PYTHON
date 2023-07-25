@@ -22,6 +22,23 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
+        contador_numero_pares = 0
+        numero_pedido = prompt("Ingrese un numero", "Número")
+        while numero_pedido==None or not numero_pedido.isdigit():
+            numero_pedido = prompt("Ingresar un numero", "Número")
+        
+        numero_pedido = int(numero_pedido)
+
+        rango_a_recorrer = range(1, numero_pedido + 1)
+
+        for numero in rango_a_recorrer:
+
+            if numero % 2 == 0:
+                contador_numero_pares +=1
+                print(numero)
+        
+        alert ("Numero pares", f"Se encontraton {contador_numero_pares} números pares.")
+
         pass
         
     

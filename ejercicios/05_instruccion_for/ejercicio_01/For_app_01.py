@@ -23,9 +23,31 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass 
+
+        for numero in range (1,6):
+            alert("EJ1" , f"{numero}")
+
+        """
+        for numero in range (5):
+            alert("EJ1" , f"{numero + 1}")
+        
+        """
+        
+        
        
             
+       # numero = 0
+
+        #while numero < 6 :
+        #    alert("datos", f"{numero}")
+        #    numero = numero + 1
+
+        #listas_numeros = list (range (1,6))
+        #listas_nombre = ["nombre1","nombre2","nombre3"]
+        #random.shuffle(listas_nombre)
+
+        #for nombre in listas_nombre:
+            #print(nombre) 
 
 if __name__ == "__main__":
     app = App()

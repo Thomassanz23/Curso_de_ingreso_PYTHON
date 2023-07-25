@@ -41,8 +41,21 @@ class App(customtkinter.CTk):
         self.btn_validar.grid(row=4, pady=20, columnspan=2, sticky="nsew")
 
     def btn_validar_on_click(self):
-        pass
+        nombre = ["Thomas"]       
+        edad = [25]
+        Tecnologia = ["PYTHON - JS - ASP.NET"]
+        puesto = ["Jr - Ssr - Sr"]
 
+        for i in nombre:
+            print (f"nombre del trabajador {nombre}")
+
+        for i in edad:
+            print (f"edad: {edad}")
+
+        for i in Tecnologia:
+            print (f"tencologia{Tecnologia}")
+        for i in puesto:
+            print (f"puesto {puesto}")
 
 if __name__ == "__main__":
     app = App()

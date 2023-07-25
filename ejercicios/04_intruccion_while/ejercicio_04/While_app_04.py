@@ -25,7 +25,10 @@ class App(customtkinter.CTk):
         
     
     def btn_validar_numero_on_click(self):
-        pass
+        while True:
+            valor_de_numero = prompt("Ingrese para validar un numero entre 0 y 9. ") 
+            while valor_de_numero == None or not valor_de_numero.isdigit() or int (valor_de_numero) :
+
     
 if __name__ == "__main__":
     app = App()

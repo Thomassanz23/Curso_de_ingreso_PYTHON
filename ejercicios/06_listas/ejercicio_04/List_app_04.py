@@ -24,6 +24,14 @@ class App(customtkinter.CTk):
 
 
     def btn_calcular_on_click(self):
+        numero_min = 0
+        primera_vez= True
+
+        for numero in self.lista_datos:
+            if primera_vez or numero < numero_min:
+                numero_min = numero
+                primera_vez = False
+        alert ("EJ4", f"El numero minimo es:{numero_min}")
         pass
     
     

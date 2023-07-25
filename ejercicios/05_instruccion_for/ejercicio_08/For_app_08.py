@@ -21,7 +21,17 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        numero_pares = 0
+        numero_pedido = prompt("ingrese un numero","Número")
+        while numero_pedido == None or not numero_pedido.isdigit():
+            numero_pedido = prompt("Ingresar un número", "Número")
+
+            numero_pedido = int(numero_pedido * 0.5) + 1
+
+
+
+
+       
     
 if __name__ == "__main__":
     app = App()

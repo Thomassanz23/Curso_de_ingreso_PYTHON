@@ -39,7 +39,7 @@ class App(customtkinter.CTk):
         edad = self.txt_edad.get()
         edad = int(edad)
     # Niño/a (menor de 10)
-        if edad < 10 :
+        if edad >= 9 :
             mensaje = "Es un niño"
         #else:
         #    mensaje = "No es un niño"

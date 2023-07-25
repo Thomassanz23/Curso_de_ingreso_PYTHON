@@ -24,7 +24,17 @@ class App(customtkinter.CTk):
 
 
     def btn_calcular_on_click(self):
-        pass
+            numero_max=0
+            primera_vaz= True
+
+            for numero in self.lista_datos:
+                if primera_vaz or numero > numero_max:
+                      numero_max = numero
+                      primera_vaz = False
+                
+            alert("EJ3", f"El numero maximos es: {numero_max}")
+            pass
+
     
 if __name__ == "__main__":
     app = App()

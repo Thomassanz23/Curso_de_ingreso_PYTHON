@@ -24,6 +24,30 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
+        """
+        lista =  [1, 2.2, "3", [4], range(5), None , True]
+
+        cantidad_de_elementos =len(lista)
+        print(f"Cantidad de elementos: {cantidad_de_elementos}")
+        print (type(lista))
+
+        lista_de_enteros = list(range(10))
+
+        for item in lista:
+            print("=================")
+            print(item, type(item))
+        
+        for i in lista_de_enteros:
+            print(i)
+        """
+        lista = self.lista_datos
+        for i in lista:
+            print(i)
+            
+            alert ("EJ1",f"Lista de numero:{i}")
+
+        
+        
         pass
         
         

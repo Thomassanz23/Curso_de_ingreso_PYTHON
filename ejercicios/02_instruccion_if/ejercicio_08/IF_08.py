@@ -5,8 +5,8 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
-nombre:
-apellido:
+nombre:Thomas 
+apellido:Sanchez
 ---
 Ejercicio: instrucion_if_08
 ---
@@ -41,6 +41,16 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
+        edad = self.txt_edad.get()
+        estado_civil=self.combobox_estado_civil.get()
+        edad = int(edad)
+
+        if estado_civil == "Soltero" or estado_civil== "Casado" or estado_civil==  "Divorciodo" and edad >=18:
+            alert("EJ8", "NO HACER NADA")
+        else:
+            alert("EJ8", "Es soltero y no es menor.")
+
+
         pass
 
         
